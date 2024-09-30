@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.bars {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #555;
+}
+
+.link.active {
+  background-color: #007bff;
+}
+
+.link_text {
+  margin-left: 10px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.file-upload {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.file-upload-label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#file-upload-input {
+  display: none;
+}
+
+#file-upload-input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#file-upload-input[type="file"]::before {
+  content: 'Select or Drag and Drop files';
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#file-upload-input[type="file"]:hover::before {
+  background-color: #0056b3;
+}
+
+.btn-container {
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  text-decoration: underline;
+}
+
+.file-names {
+  margin-top: 20px;
+}
+
+.file-names ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-names li {
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,185 @@
+/* Styles for the Dashboard container and components */
+
+.dashboard-container {
+  background-color: #fbfbfe; /* Dark background */
+  color: rgb(2, 2, 2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Width of container */
+  max-width: 19500px; /* Maximum width */
+  margin: 0 auto; /* Center align */
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1f4068; /* Dark blue navbar background */
+  padding: 15px 0; /* Padding around navbar */
+  height: 65px; /* Height of navbar */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; /* Center align */
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-item .navbar-links {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-item .navbar-links:hover {
+  color: #fca311; /* Orange color on hover */
+}
+
+.image-container {
+  margin-top: 20px; /* Space between navbar and image */
+  text-align: center; /* Center align text and buttons */
+}
+
+.dashboard-image {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.image-heading {
+  margin-top: 20px; /* Spacing above heading */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Gap between buttons */
+  margin-top: 20px; /* Spacing above buttons */
+}
+
+.dashboard-button {
+  background-color: black; /* Green background color */
+  border: none;
+  color: white;
+  padding: 15px 32px; /* Padding inside button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-button a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Text color */
+}
+
+.dashboard-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Style for the upload container */
+.upload-container {
+  margin-top: 30px; /* Spacing above upload section */
+  text-align: center; /* Center align */
+}
+
+/* Style for the file input */
+.upload-container input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+/* Style for the custom file input label */
+.upload-label {
+  background-color: black; /* Green background color */
+  border: none;
+  color: white;
+  padding: 15px 32px; /* Padding inside label */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the custom file input label */
+.upload-label:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Style for the proceed to payment button */
+.proceed-button {
+  background-color: #fca311; /* Orange background color */
+  border: none;
+  color: white;
+  padding: 15px 32px; /* Padding inside button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px; /* Spacing above the button */
+  transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+  background-color: #e59200; /* Darker orange on hover */
+}
+
+/* Style for the custom styled upload input */
+.upload-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.upload-input-wrapper input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.upload-input-wrapper label {
+  background-color: #4CAF50; /* Green background color */
+  color: white;
+  padding: 15px 32px; /* Padding inside label */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.upload-input-wrapper label:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.upload-input-wrapper .file-info {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
